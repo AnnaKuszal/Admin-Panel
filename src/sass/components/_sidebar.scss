@@ -1,0 +1,80 @@
+.sidebar {
+  background-color: $list-item-bg-color;
+  height: 100vh;
+  
+  ul {
+    margin: 0 0 30px;
+    padding: 0;
+    list-style-type: none;
+  
+    li {
+      display: block;
+      margin: 0 auto ;
+    }
+  
+    a {
+      color: $header-color;
+      display: block;
+      padding: 10px;
+      overflow-x: hidden;
+      background-color: $list-item-bg-color;
+      border-left: solid 5px $list-item-bg-color;
+       
+      &:hover {
+        background-color: $hover-menu-color;
+        border-left: solid 5px $hover-color;
+        color: $body-bg-color;
+      }
+  
+      &:hover svg {
+        fill: $body-bg-color;
+      }
+
+      &.active {
+        background-color: $hover-menu-color;
+        border-left: solid 5px $hover-color;
+        color: $body-bg-color;
+      }
+
+      svg {
+        margin-right: 20px;
+        line-height: 1.7;
+        fill: $header-color;
+        display: inline-block;
+        height: 1em;
+        width: 1em;
+        top: .125em;
+        position: relative;
+      }
+    }
+  }
+}
+
+@media($breakpoint-mobile) {
+  .sidebar {
+    width: 299px;
+    overflow-x: hidden;
+
+    .logo-wrapper {
+      padding-bottom: 0;
+      height: 60px;
+
+      a, i {
+        color: black;
+      }
+
+    }
+
+  }
+
+}
+
+.top-bar-sm {
+  display: none;
+}  
+
+@media(max-width: 767px) {
+  .top-bar-sm {
+    display: block;
+  }
+} 
