@@ -24,3 +24,10 @@ $paragraph-font-size: 16px;
 /* Fonts */
 $brand-font: 'Damion', cursive;
 $paragraph-font: "Open Sans", Helvetica, Arial;
+
+
+/* Breakpoints */
+$breakpoint-mobile: 'max-width: 767px';
+$breakpoint-tablet: 'min-width: 768px';
+$breakpoint-lg-screen: 'min-width: 992px';
+$breakpoint-xl-screen: 'min-width: 1200px';
