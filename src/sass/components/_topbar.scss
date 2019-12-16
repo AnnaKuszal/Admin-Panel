@@ -1,0 +1,21 @@
+.top-bar-style {
+  background-color: $page-main-color;
+  box-shadow: 1px 1px 0 2px $hover-table-color;
+}
+
+@media(max-width: 767px) {
+  .top-bar-style {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  background-color: $list-item-bg-color;
+  padding: 10px 10px 0;
+}
+
+@media(min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
