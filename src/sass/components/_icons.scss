@@ -1,0 +1,30 @@
+svg {
+  width: 18px;
+  height: 18px;
+  line-height: 1.7;
+}
+
+.icon-basic {
+  fill: $header-color;
+    
+  &:hover {
+    fill: $hover-color;
+  }
+}
+  
+.hamburger {
+  font-size: 20px;
+  color: $page-main-color;
+  font-style: 100;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  cursor: pointer;
+  
+  &:hover {
+    color: $hover-color;
+    transform: scale(1.2);
+  }  
+}
+  
