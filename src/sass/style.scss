@@ -4,10 +4,24 @@
 @import "normalize";
 @import "layout";
 
+@import "global";
+
+/* Components */
+@import "components/sidebar";
+@import "components/topbar";
+
+@import "components/typography";
+@import "components/buttonsTabs";
+@import "components/icons";
+@import "components/tables";
+@import "components/datePicker";
+
 @import "components/form_field";
 
 /* Sections */
-@import "section/registration_form";
+@import "sections/section-global";
+@import "sections/registration_form";
 
 /* Pages / Views */
+@import "pages/global-view";
 @import "pages/registration";
