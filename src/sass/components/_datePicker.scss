@@ -19,20 +19,20 @@
   border-left: solid 1px $element-color-4;
 }
   
-input {
+.calendar input {
   max-width: 140px;
   height: 20px;
   border: none;
   margin: 5px 0;
 }
   
-input:nth-child(2) {
+.calendar input:nth-child(2) {
   border-left: solid 1px $element-color-4;
   margin-right: 10px;
 }
 
 @media($breakpoint-mobile){
-  input {
+  .calendar input {
     max-width: 100px;
   }
 }
