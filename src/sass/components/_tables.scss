@@ -19,7 +19,6 @@ td {
 }
 
 .links-tb, .banners-tb {
-
   .table-row:first-child {
     border-top: solid 1px $element-color-4;
   }
@@ -34,7 +33,6 @@ td {
 
 .detail-tb {
   .table-row {
-
     td:nth-child(1)
     {
       width: 125px;
@@ -94,7 +92,6 @@ td {
   }
 
   tr:first-child {
-
     &:hover {
       background-color: $page-main-color;
     }
