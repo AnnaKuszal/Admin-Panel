@@ -193,6 +193,10 @@
       <button class="btn btn-add">save</button>
       <br><br>
 
+      <button class="btn btn-modal">Cancel</button>
+      <button class="btn btn-modal">Quit</button>
+      <br><br>
+
       <button class="btn btn-refresh"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 16 17" style="enable-background:new 0 0 16 17;" xml:space="preserve">
       <path d="M11,6h5V1h-1v3.3l-1.2-1.1c-2.9-2.9-7.7-2.9-10.6,0c-2.9,2.9-2.9,7.7,0,10.6C4.7,15.3,6.6,16,8.5,16s3.8-0.7,5.3-2.2
@@ -991,10 +995,24 @@
     
   </form>
 
-  
 </div>
 <br><br>
 
+  <div class="modal" id="myModal" style="display: block; width: 300px">
+
+    <div>
+      <h1 class="section-header">Do you really want to Quit?</h1>
+    </div>
+    <hr>
+
+    <div>
+      <button class="btn btn-modal js--close-modal">Cancel</button>
+      <button class="btn btn-modal js--close-modal active">Quit</button>
+    </div>
+
+  </div>
+
+  <br><br><br><br>
 
           
   </body> 
