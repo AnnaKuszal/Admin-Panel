@@ -1,0 +1,124 @@
+hr {
+  border: solid 1px $element-color-4;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+}
+
+.flex-nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexible-inline {
+  display: inline-flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 60px;
+  padding: 13px 10px;
+  border-left: solid 1px $element-color-4;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+  
+.justify-end {
+  justify-content: flex-end;
+}
+  
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+  
+.margin-x-10 {
+  margin: 0 10px;
+}
+
+.margin-y-5 {
+  margin: 5px 0;
+}
+
+.margin-y-10 {
+  margin: 10px 0;
+}
+
+.margin-y-20 {
+  margin: 20px 0;
+}
+
+.margin-l-10 {
+  margin-left: 10px;
+}
+  
+.margin-l-15 {
+  margin-left: 15px;
+}
+
+.padding-y-20 {
+  padding: 20px 0;
+}
+
+.scroll-wrapper {
+  display: block;
+  max-height: 600px;
+  width: 100%;
+  overflow: auto;
+}
+
+@media($breakpoint-mobile){
+  .scroll-wrapper {
+    max-height: 400px;
+  }
+}
+
+@media($breakpoint-tablet){
+  .scroll-wrapper {
+    max-height: 450px;
+  }
+}
+
+@media($breakpoint-lg-screen){
+  .scroll-wrapper {
+    max-height: 600px;
+  }
+}
+
+@media($breakpoint-xl-screen){
+  .scroll-wrapper {
+    max-height: 600px;
+  }
+}
+
+.colors {
+  height: 30px;
+}
+
+.sheet {
+  background-color: $page-main-color;
+  box-shadow: 1px 1px 3px 2px $hover-table-color;
+  margin-bottom: 15px;
+}
+
+.chart {
+  width: 100%;
+  margin: 20px 0;
+}
+
