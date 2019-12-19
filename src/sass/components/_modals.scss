@@ -22,7 +22,7 @@
     align-items: center;
   }
   
-.modal {
+  .modal {
     margin: auto;
     position: relative;
   }
@@ -62,7 +62,7 @@
 }
 
 .modal.show {
- display: block;
+  display: block;
 }
   
 .modal .btn-close {
