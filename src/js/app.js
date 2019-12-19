@@ -92,8 +92,54 @@ const app = {
       function() {
         addFixed(); 
       });
+
+
+    function closeModal() {
+      document.getElementById('overlay').classList.remove('show');
+    }
+
+    document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
+      console.log('Button', btn);
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        closeModal();
+      });
+    });
+
+    document.querySelector('#overlay').addEventListener('click', function(e) {
+      if(e.target === this) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keyup', function(e) {
+      if(e.keyCode === 27) {
+
+        e.preventDefault();
+
+        closeModal();
+      }
+    });
+
     
-    
+    function openModal(modal) {
+      document.querySelectorAll('#overlay > *').forEach(function(modal) {
+        modal.classList.remove('show');
+      });
+      document.querySelector('#overlay').classList.add('show');
+      document.querySelector(modal).classList.add('show');
+    }
+
+   
+    window.addEventListener('beforeunload', function(e) {
+      e.preventDefault();
+
+      e.returnValue = false;
+
+      openModal('#myModal');
+
+    });
+
   },
 
 };
