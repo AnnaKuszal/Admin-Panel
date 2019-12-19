@@ -16,12 +16,12 @@
 @import "components/tables";
 @import "components/datePicker";
 
-@import "components/form_field";
+@import "components/form";
+@import "components/modals";
+
 
 /* Sections */
 @import "sections/section-global";
-@import "sections/registration_form";
 
 /* Pages / Views */
 @import "pages/global-view";
-@import "pages/registration";
