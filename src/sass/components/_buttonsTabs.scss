@@ -9,17 +9,17 @@
 
 .btn-1 {
   background-color: $page-main-color;
-  padding: 5px;
+  display: block;
+  padding: 2px 0px 0px;
   width: 30px;
   height: 30px;
+  text-align: center;
+  color: $element-color-1;
   
   &:hover {
     background-color: $hover-table-color;
     font-weight: 700;
-
-    a {
-      color: $header-color;
-    }
+    color: $header-color;
   }
 }
 

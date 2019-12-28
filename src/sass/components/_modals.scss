@@ -6,7 +6,7 @@
   z-index: 9999;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: $modal-bg-color;
   justify-content: center;
   align-items: center;
   overflow: auto;
@@ -16,10 +16,17 @@
   
 @media($breakpoint-mobile) {
   .overlay {
+    
     position: fixed;
+
+    //top: 0;
+    //left: 0;
+    //right: 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
   }
   
   .modal {
@@ -28,7 +35,7 @@
   }
 }
   
-.overlay.show {
+.overlay.show-mod {
   display: flex;
 }
   
@@ -40,7 +47,7 @@
   min-width: 350px;
   max-width: 600px;
   margin: auto;
-  background-color: #ffffff;
+  background-color: $page-main-color;
   position: relative;
   display: none;
   
@@ -61,7 +68,7 @@
   }
 }
 
-.modal.show {
+.modal.show-mod {
   display: block;
 }
   
