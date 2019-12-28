@@ -73,33 +73,70 @@ const app = {
       
     });
     
-    
-    function addFixed() {
-      var panelLeftWidth = $('.panel-left').width();      
-    
-      if(panelLeftWidth > 5){
-        $('.sidebar').addClass('fixed').width(panelLeftWidth);
+    function addFixedLeft() {
+      
+      const panelLeft = document.querySelector('.panel-left');
+
+      let panelLeftWidth = panelLeft.offsetWidth;
+
+      const sidebar = document.querySelector('.sidebar');
+
+      if(panelLeftWidth > 1){
+        sidebar.classList.add('fixed');
+        sidebar.style.width = `${panelLeftWidth}px`;
       }
-    
-      var panelRightWidth = $('.panel-right').width();      
-      $('.top-bar-wrapper').addClass('fixed').width(panelRightWidth);
-       
+
     }
 
-    addFixed(); 
+    function addFixedRight() {
+
+      const panelRight = document.querySelector('.panel-right');
+
+      let panelRightWidth = panelRight.offsetWidth;
+
+      const topBarWrapper = document.querySelector('.top-bar-wrapper');
+
+      topBarWrapper.classList.add('fixed');
+      topBarWrapper.style.width = `${panelRightWidth}px`;
+      
+    }
+
+    addFixedLeft();
+    addFixedRight(); 
+
     
-    $(window).resize(
-      function() {
-        addFixed(); 
-      });
+    window.addEventListener('resize', function(e){
+      
+      e.preventDefault();
 
+      const pageView = document.querySelector('.page-view');
+      
+      let pageViewWidth = pageView.offsetWidth;
 
+      const sidebar = document.querySelector('.sidebar');
+
+      if(pageViewWidth > 767) {
+        addFixedLeft();
+        addFixedRight(); 
+      }
+
+      if(pageViewWidth <= 767) {
+        
+        sidebar.classList.remove('fixed');
+        sidebar.style.width = '299px';
+        
+        addFixedRight();
+      }
+
+    }, true);
+    
+    
     function closeModal() {
-      document.getElementById('overlay').classList.remove('show');
+      document.getElementById('overlay').classList.remove('show-mod');
     }
 
     document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
-      console.log('Button', btn);
+      
       btn.addEventListener('click', function(e) {
         e.preventDefault();
         closeModal();
@@ -124,12 +161,11 @@ const app = {
     
     function openModal(modal) {
       document.querySelectorAll('#overlay > *').forEach(function(modal) {
-        modal.classList.remove('show');
+        modal.classList.remove('show-mod');
       });
-      document.querySelector('#overlay').classList.add('show');
-      document.querySelector(modal).classList.add('show');
+      document.querySelector('#overlay').classList.add('show-mod');
+      document.querySelector(modal).classList.add('show-mod');
     }
-
    
     window.addEventListener('beforeunload', function(e) {
       e.preventDefault();
