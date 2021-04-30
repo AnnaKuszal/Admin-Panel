@@ -7,16 +7,16 @@ body {
   line-height: 1.7;
   color: $paragraph-color;
 }
-  
+
 .page-view {
   display: flex;
 }
-  
+
 .panel-left {
   width: 15%;
-  margin: 0; 
+  margin: 0;
 }
-  
+
 .panel-right {
   width: 85%;
   margin: 0;
@@ -31,41 +31,41 @@ body {
     overflow-x: hidden;
     transition: width 1s;
   }
-  
+
   .show {
     width: 70%;
   }
-    
+
   .panel-right {
     width: 100%;
   }
 }
-  
+
 @media($breakpoint-tablet) {
   .panel-left {
     width: 22%;
   }
-  
+
   .panel-right {
     width: 78%;
   }
 }
-  
+
 @media($breakpoint-lg-screen) {
   .panel-left {
     width: 17%;
   }
-  
+
   .panel-right {
     width: 83%;
   }
 }
-  
+
 @media($breakpoint-xl-screen) {
   .panel-left {
     width: 15%;
   }
-  
+
   .panel-right {
     width: 85%;
   }
@@ -75,7 +75,7 @@ body {
   > * {
     display: none;
   }
-    
+
   > .active {
     display: block;
   }

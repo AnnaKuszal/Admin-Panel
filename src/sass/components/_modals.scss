@@ -13,36 +13,30 @@
   padding: 30px;
   display: none;
 }
-  
+
 @media($breakpoint-mobile) {
   .overlay {
-    
     position: fixed;
-
-    //top: 0;
-    //left: 0;
-    //right: 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
     display: none;
   }
-  
+
   .modal {
     margin: auto;
     position: relative;
   }
 }
-  
+
 .overlay.show-mod {
   display: flex;
 }
-  
+
 .overlay::webkit-scrollbar {
   display: none;
 }
-  
+
 .modal {
   min-width: 350px;
   max-width: 600px;
@@ -50,19 +44,19 @@
   background-color: $page-main-color;
   position: relative;
   display: none;
-  
+
   div {
     padding: 0 15px;
   }
-  
+
   div:first-child {
-    padding: 10px 15px; 
+    padding: 10px 15px;
   }
-  
+
   div:last-child {
-    text-align: right; 
+    text-align: right;
   }
-  
+
   hr {
     margin: 0;
   }
@@ -71,7 +65,7 @@
 .modal.show-mod {
   display: block;
 }
-  
+
 .modal .btn-close {
   position: absolute;
   top: 0;

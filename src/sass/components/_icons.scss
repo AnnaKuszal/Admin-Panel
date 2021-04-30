@@ -6,12 +6,12 @@ svg {
 
 .icon-basic {
   fill: $header-color;
-    
+
   &:hover {
     fill: $hover-color;
   }
 }
-  
+
 .hamburger {
   font-size: 20px;
   color: $page-main-color;
@@ -21,10 +21,10 @@ svg {
   height: 20px;
   line-height: 20px;
   cursor: pointer;
-  
+
   &:hover {
     color: $hover-color;
     transform: scale(1.2);
-  }  
+  }
 }
-  
+

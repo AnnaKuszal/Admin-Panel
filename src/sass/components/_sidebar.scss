@@ -1,17 +1,17 @@
 .sidebar {
   background-color: $list-item-bg-color;
   height: 100vh;
-  
+
   ul {
     margin: 0 0 30px;
     padding: 0;
     list-style-type: none;
-  
+
     li {
       display: block;
       margin: 0 auto ;
     }
-  
+
     a {
       color: $header-color;
       display: block;
@@ -19,13 +19,13 @@
       overflow-x: hidden;
       background-color: $list-item-bg-color;
       border-left: solid 5px $list-item-bg-color;
-       
+
       &:hover {
         background-color: $hover-menu-color;
         border-left: solid 5px $hover-color;
         color: $body-bg-color;
       }
-  
+
       &:hover svg {
         fill: $body-bg-color;
       }
@@ -71,10 +71,10 @@
 
 .top-bar-sm {
   display: none;
-}  
+}
 
 @media(max-width: 767px) {
   .top-bar-sm {
     display: block;
   }
-} 
+}

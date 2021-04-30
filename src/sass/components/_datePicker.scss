@@ -5,7 +5,7 @@
   justify-content: center;
   margin: 20px 0;
 }
-  
+
 .calendar {
   padding: 0 10px;
   border: solid 1px $element-color-4;
@@ -18,14 +18,14 @@
   align-items: center;
   border-left: solid 1px $element-color-4;
 }
-  
+
 .calendar input {
   max-width: 140px;
   height: 20px;
   border: none;
   margin: 5px 0;
 }
-  
+
 .calendar input:nth-child(2) {
   border-left: solid 1px $element-color-4;
   margin-right: 10px;

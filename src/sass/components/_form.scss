@@ -2,11 +2,11 @@ form {
   width: 100%;
   text-align: center;
 }
-  
+
 .field {
   margin: 0 auto;
 }
-  
+
 form input[type="text"] {
   height: 40px;
   width: 100%;
@@ -17,7 +17,7 @@ form input[type="text"] {
   color: $paragraph-color;
   outline: none;
 }
-  
+
 .form-label {
   font-family: $paragraph-font;
   color: $header-color;

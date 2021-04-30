@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: nowrap;
   border-bottom: solid 1px $element-color-4;
-    
+
   &:hover {
     background-color: $hover-table-color;
   }
@@ -13,7 +13,7 @@ td {
   display: flex;
   align-items: center;
 }
-  
+
 .icons {
   justify-content: space-evenly;
 }
@@ -29,7 +29,7 @@ td {
     display: flex;
     justify-content: space-between;
   }
-} 
+}
 
 .detail-tb {
   .table-row {
@@ -79,7 +79,7 @@ td {
       width: 70px;
     }
   }
-} 
+}
 
 .payout-tb, .detail-tb {
   width: 100%;
@@ -183,13 +183,13 @@ td {
   border-bottom: solid 1px $element-color-4;
   display: flex;
   justify-content: space-between;
-  
+
   .line-header {
     margin: 15px 0 5px;
   }
-  
+
   p {
     margin: 15px 0 5px;
   }
-  
+
 }
