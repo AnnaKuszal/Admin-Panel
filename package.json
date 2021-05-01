@@ -16,7 +16,7 @@
     "build": "npm-run-all build:* test",
     "build:clean": "mkdirp dist && rm -r dist && mkdirp dist && mkdirp docs && rm -r docs && mkdirp docs",
     "build:copy": "copyfiles -a -u 1 -e \"**/sass/**/*\" -e \"**/.gitkeep\" \"src/**/*\" dist && copyfiles -a -u 1 \"dist/**/*\" docs",
-    "build:sass": "node-sass --output-style compact -o dist/css src/sass",
+    "build:sass": "node-sass --output-style compact -o dist/css src/sass && node-sass --output-style compact -o docs/css src/sass",
     "build:autoprefixer": "postcss dist/css/*.css --use autoprefixer -r",
     "build-dev": "npm-run-all build-dev:sass build:autoprefixer",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o dist/css src/sass",
